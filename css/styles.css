@@ -16,5 +16,18 @@
 
 h1 {
     font-size: 20px;
-    color: blue;
+    color: #000000;
+    /* rgb (0,0,0)
+    rgba (0 0 0 0.5) */
 }
+
+h1 span{
+    color:#037bc0;
+}
+
+h2 span {
+    color: green;
+}
+
+/* COLORES
+por Nombre, Hexadecimal, RGB, HSL, rgba*/
