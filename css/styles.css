@@ -1,0 +1,14 @@
+/* SELECTOR */
+/* p - elemento a modificar*/
+/* {} - llaves, todo lo que esté dentro se aplica al selector */
+
+/* color - PROPIEDAD */
+/* blue - VALOR */
+/* PROPIEDAD - VALOR = DECLARACIÓN */
+
+/* px - unidad de medida */
+
+/* p {
+    color: blue;
+    font-size: 20px
+}*/
