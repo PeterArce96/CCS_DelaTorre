@@ -41,11 +41,40 @@ h2 span {
     nth-child() - se coloca en el parentesis el #de hijo a seleccionar*/
 
 /* Mientras más específico el selector, más posibilidad que el navegador lo tome en cuenta. En este caso aunq el elemento "a" de la línea 47 esté más abajo, no cambia a todos los elementos "a" a minusculas porque el "footer a" es más específico */
-footer a{
+/* footer a{
     text-transform: uppercase;
 }
 a{
     text-transform: lowercase;
+} */
+
+
+/* ESPECIFICIDAD
+Con especificidad podemos saber que valores serán tomados en cuenta por el navegador
+Si bien un selector que aparece después de otro tiene más peso y es tomadoe en cuenta, hay otras consideraciones */
+
+/* CLASES Y ID'S
+Class tiene como característica que soporta 1 o más, reutilizable
+ID's solo se puede asignar a 1 por elemento HTML, y tambien solo se debe utilizar máximo 1 vez por documento */
+
+nav a{
+    text-transform: uppercase;
+}
+/* especificidad: 0 0 0 2 - 2 elementos */
+
+/* Clase */
+.navegacion a{
+    text-transform: lowercase;
+}
+/* especificidad: 0 0 1 1 - 1 clase y 1 elemento */
+
+
+/* ID */
+/*  No se recomienda usar ID para el css, ya que son pesados. Son recomendables para JS */
+#navegacion a{
+    text-transform: capitalize;
 }
 
+/* especificidad: 0 1 0 1 - 1 id y 1 elemento */
+/* Para que un estilo sea más importante que los otros, se coloca el "!important, pero no se recomienda */
 
