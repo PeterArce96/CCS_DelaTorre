@@ -87,6 +87,16 @@ ID's solo se puede asignar a 1 por elemento HTML, y tambien solo se debe utiliza
 /* especificidad: 0 1 0 1 - 1 id y 1 elemento */
 /* Para que un estilo sea más importante que los otros, se coloca el "!important, pero no se recomienda */
 
+/* Globales */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* Header y navegación */
 
@@ -99,17 +109,27 @@ ID's solo se puede asignar a 1 por elemento HTML, y tambien solo se debe utiliza
 .nombre-sitio span{
     color: #037bc0;
 }
+/* se crea otro contenedor para navegacion, esto para que el borde no este limitado o cortado y se expanda hasta las orillas de la ventana */
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
+}
 
 .nav-principal{
-    border-top: 1px solid #e1e1e1;
+
     padding: 20px 0 20px 0;
 }
 
-/* Globales */
-a{
-    text-decoration: none;
-    color: black;
+.hero {
+    /* background-image para colocar la imagen principal */
+    background-image: url(../img/principal.jpg);
+    height: 550px;
+    background-repeat: no-repeat; /* para que no se repita*/
+    background-size: cover; /* para que se expanda en toda la ventana*/
 }
+
+
+
+
 
 /* .enlace{
     text-transform: uppercase;
@@ -124,19 +144,21 @@ a{
 /* BOX MODEL
 Modelo de caja, medidas que dependen de 4 cosas: contenido, padding (relleno), borde y margen */
 
-.sobre-nosotros{
+/* .sobre-nosotros{
     background-color: red;
     width: 200px;
     padding: 25px;
-    /* Para que la caja se adapte a los 200px y no incremente con el padding 25 a 250px, arriba y abajo */
     box-sizing: border-box;
-}
-.sobre-empresa{
+} */
+    /* Para que la caja se adapte a los 200px y no incremente con el padding 25 a 250px, arriba y abajo */
+    
+
+/* .sobre-empresa{
     background-color: blue;
     width: 500px;
     padding: 100px;
     box-sizing: border-box;
-}
+} */
 /* padding- espacio hacia dentro del elemento */
 /* Margin - espacio hacia afuera del elemento */
 
