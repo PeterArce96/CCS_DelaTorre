@@ -114,9 +114,12 @@ a{
     border-top: 1px solid #e1e1e1;
 }
 
+/* Siempre se aplica FLEXBOX al elemento padre de los elementos a modificar */
 .nav-principal{
-
     padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row; /*por defecto*/
+    justify-content: space-between;
 }
 
 .hero {
@@ -128,6 +131,10 @@ a{
 }
 
 
+/* FLEXBOX */
+/* justify-content: si el flex-direction es ROW, esta propiedad permite alinear contenido horizontalmente; centro, izq o der. 
+si el flex-direction es column, alinea verticalmente*/
+/* align-items, lo contrario a justify-content, alinea de la otra manera, vertical u horizontal */
 
 
 
