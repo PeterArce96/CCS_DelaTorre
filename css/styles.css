@@ -123,3 +123,18 @@ Modelo de caja, medidas que dependen de 4 cosas: contenido, padding (relleno), b
 }
 /* padding- espacio hacia dentro del elemento */
 /* Margin - espacio hacia afuera del elemento */
+
+
+
+/* ++++++++++++++++++++++++
+Display BLOCK
+Elemento se colocará por debajo del otro sin importar su tamaño o que tanto contenido tiene
+
+Display INLINE
+Elemento se posicionará a la derecha una vez que haya tomado el espacio que requiere . NO se le puede aplicar width, height
+
+Display INLINE-BLOCK
+Permite darle un width, height, margin a un elemento inline, lo que no es posible hacer en un elemento inline
+
+CADA ELEMENTO TIENE UN DISPLAY POR DEFAULT, SOLO SE UTILIZA ESTA PROPIEDAD CUANDO SE DESEE MODIFICAR*/
+
