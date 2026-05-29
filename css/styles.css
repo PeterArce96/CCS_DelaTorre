@@ -1,10 +1,11 @@
 /* Snipped border-box */
-/* html{
+
+html{
     box-sizing: border-box;
 }
 *, *:before, *:after{
     box-sizing: inherit;
-} */
+}
 
 /* SELECTOR */
 /* p - elemento a modificar*/
@@ -87,12 +88,27 @@ ID's solo se puede asignar a 1 por elemento HTML, y tambien solo se debe utiliza
 /* Para que un estilo sea más importante que los otros, se coloca el "!important, pero no se recomienda */
 
 
-.nombre-sitio span{
-    color: #037bc0;
-}
+/* Header y navegación */
+
 .nombre-sitio {
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    color: #037bc0;
+}
+
+.nav-principal{
+    border-top: 1px solid #e1e1e1;
+    padding: 20px 0 20px 0;
+}
+
+/* Globales */
+a{
+    text-decoration: none;
+    color: black;
 }
 
 /* .enlace{
