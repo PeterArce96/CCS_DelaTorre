@@ -98,6 +98,10 @@ a{
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Header y navegación */
 
 .nombre-sitio {
@@ -121,6 +125,10 @@ a{
     flex-direction: row; /*por defecto*/
     justify-content: space-between;
 }
+/* FLEXBOX */
+/* justify-content: si el flex-direction es ROW, esta propiedad permite alinear contenido horizontalmente; centro, izq o der. 
+si el flex-direction es column, alinea verticalmente*/
+/* align-items, lo contrario a justify-content, alinea de la otra manera, vertical u horizontal */
 
 .hero {
     /* background-image para colocar la imagen principal */
@@ -130,11 +138,21 @@ a{
     background-size: cover; /* para que se expanda en toda la ventana*/
 }
 
+/* CATEGORIAS */
+.listado-categorias {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
-/* FLEXBOX */
-/* justify-content: si el flex-direction es ROW, esta propiedad permite alinear contenido horizontalmente; centro, izq o der. 
-si el flex-direction es column, alinea verticalmente*/
-/* align-items, lo contrario a justify-content, alinea de la otra manera, vertical u horizontal */
+/* CSS GRID
+Permite definir la ubicacion y el tamaño de tu sitio web, FLEXBOX es unidimensional, row o column. GRID te permite distribuir en ambas dimensiones {
+Para crear columnas -> grid-template-columns
+Para crear columnas -> grid-template-rows
+para areas -> grid-template-areas
+Se suele utilizar la Unidad "fr o fracciones"
+Grid-lins ->lineas o bordes, grid track -> parte central del contenido grid, grid cell -> se habilita con areas, grid area -> cuando usas nombres en el grid*/
 
 
 
