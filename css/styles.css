@@ -100,6 +100,7 @@ a{
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 /* Header y navegación */
@@ -139,6 +140,24 @@ si el flex-direction es column, alinea verticalmente*/
 }
 
 /* CATEGORIAS */
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    /* background-color: red; */
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+
+    border-radius: 0 0 10px 10px;
+}
+
 .listado-categorias {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
