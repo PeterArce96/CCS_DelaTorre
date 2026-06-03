@@ -7,6 +7,10 @@ html{
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* SELECTOR */
 /* p - elemento a modificar*/
 /* {} - llaves, todo lo que esté dentro se aplica al selector */
@@ -88,6 +92,10 @@ ID's solo se puede asignar a 1 por elemento HTML, y tambien solo se debe utiliza
 /* Para que un estilo sea más importante que los otros, se coloca el "!important, pero no se recomienda */
 
 /* Globales */
+h1, h2, h3{
+    font-family: 'Playfair Display', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -150,6 +158,7 @@ si el flex-direction es column, alinea verticalmente*/
     /* background-color: red; */
     padding: 20px;
     font-size: 20px;
+    
 }
 .categoria a:hover{
     background-color: #037bc0;
@@ -220,3 +229,9 @@ Permite darle un width, height, margin a un elemento inline, lo que no es posibl
 
 CADA ELEMENTO TIENE UN DISPLAY POR DEFAULT, SOLO SE UTILIZA ESTA PROPIEDAD CUANDO SE DESEE MODIFICAR*/
 
+/* +++++++++++++++++++++++++++
+Añadir OTRA FUENTES
+@font-face {
+    font-family: nombreFuente;
+    src_ url(ubicacion.woff); 
+}*/
