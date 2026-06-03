@@ -2,6 +2,7 @@
 
 html{
     box-sizing: border-box;
+    font-size: 62.5%; /*1RREM = 10PX*/
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -9,6 +10,7 @@ html{
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
 }
 
 /* SELECTOR */
@@ -96,13 +98,17 @@ h1, h2, h3{
     font-family: 'Playfair Display', sans-serif;
 }
 
+h3{
+    font-size: 3rem;
+}
+
 a{
     text-decoration: none;
     color: black;
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -114,9 +120,10 @@ img {
 /* Header y navegación */
 
 .nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     text-align: center;
+    font-size: 4rem;
 }
 
 .nombre-sitio span{
@@ -129,7 +136,7 @@ img {
 
 /* Siempre se aplica FLEXBOX al elemento padre de los elementos a modificar */
 .nav-principal{
-    padding: 20px 0 20px 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: row; /*por defecto*/
     justify-content: space-between;
@@ -142,7 +149,7 @@ si el flex-direction es column, alinea verticalmente*/
 .hero {
     /* background-image para colocar la imagen principal */
     background-image: url(../img/principal.jpg);
-    height: 550px;
+    height: 55rem;
     background-repeat: no-repeat; /* para que no se repita*/
     background-size: cover; /* para que se expanda en toda la ventana*/
 }
@@ -156,8 +163,8 @@ si el flex-direction es column, alinea verticalmente*/
     text-align: center;
     display: block;
     /* background-color: red; */
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
     
 }
 .categoria a:hover{
@@ -171,7 +178,7 @@ si el flex-direction es column, alinea verticalmente*/
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
 
 /* CSS GRID
@@ -235,3 +242,15 @@ Añadir OTRA FUENTES
     font-family: nombreFuente;
     src_ url(ubicacion.woff); 
 }*/
+
+/* +++++++++++++++++++++++++++++
+Unidades en CSS
+Las unidades aparecen junto al valor, no puede haber espacio y tambien pueden ser negativos (-20px)
+    Unidades Absolutas
+    Son las que son exactas, cm o px.
+    Unidades Relativas
+    Toman su valor en base a otro elemento. Ejemplo: em, rem, vh, vw y porcentajes
+    Se adaptan mejor a diferentes resoluciones y densidades de pixeles, lo cual lo hace la mejor opción para la gran cantidad de dispositivos que se utilizan para navegar
+
+    1REM = 16PX
+*/
